@@ -52,6 +52,11 @@ header {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+.desktop-menu {
+    display: none;
+}
+
+
 .nav {
     display: flex;
     margin-top: 3.5rem;
@@ -60,7 +65,7 @@ header {
 
 h1 {
     font-family: var(--font1-title);
-    color: var(--color-font3);    
+    color: var(--color-font3);
     font-size: 1.4rem;
 }
 
@@ -162,6 +167,7 @@ main {
     border-radius: 10px;
     flex-direction: column;
 }
+
 .grid-item:not(:first-child) {
     display: none;
 }
@@ -236,7 +242,8 @@ footer {
     font-family: var(--font3-alert);
 }
 
-footer p, .icons {
+footer p,
+.icons {
     text-align: center;
     color: var(--color-font1);
 }
@@ -267,4 +274,74 @@ footer p, .icons {
     background-color: var(--color5);
     border: none;
     color: var(--color-font3);
+}
+
+/* Versión escritorio */
+/* Grilla */
+@media (min-width: 576px) {
+    body {
+        display: grid;
+        grid-template-areas:
+            "header menu"
+            "header main"
+            "footer main"
+            "footer pagination";
+        grid-template-columns: 18% 4fr;
+        grid-template-rows: 1fr 4fr;
+    }
+
+    .container-products {
+        height: 95%;
+        margin: 15px 15px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+    }
+
+    select {
+        width: 65vw;
+    }
+
+    .grid-item:not(:first-child) {
+        display: flex;
+    }
+
+    .desktop-menu {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+header {
+    display: block;
+}
+
+
+h1 {
+
+    font-size: 0.8rem;
+}
+
+
+    .desktop-menu ul {
+        list-style-type: none;
+    }
+
+    .desktop-menu ul li {
+        margin-bottom: 10px;
+    }
+
+    .desktop-menu ul li a {
+        text-decoration: none;
+        color: var(--color-font3);
+        font-family: var(--font2-body);
+        font-size: 1.2rem;
+    }
+
+    .desktop-menu ul li a:hover {
+        color: var(--color5);
+    }
+
 }
