@@ -1,27 +1,25 @@
-# Desafío 8: Implementación de CSS Grid
+# Desafío 9: Implementación de CSS Grid
 
-En este desafío de la Academia Latam, se puso en práctica el uso de CSS Grid para la creación de una página web de comercio electrónico llamada "Sakura Emporium: Tesoros de Japón".
+En este desafío de la Academia Latam, se puso en práctica el uso de media queries y breakpoints aplicados al diseño de layouts responsivos.
 
 ## Archivos incluidos
 
-- **index.html**: Contiene la estructura HTML de la página web, donde se utilizan etiquetas semánticas de HTML5 y se integran librerías externas como Bootstrap y Font Awesome.
+- **index.html**: Contiene la estructura HTML de la página web, donde se utilizan etiquetas semánticas de HTML5 y se integran librerías externas  Font Awesome.
 - **style.css**: Archivo CSS donde se definen los estilos de la página, incluyendo la implementación de CSS Grid para la distribución de elementos.
 - **/assets**: Carpeta que contiene imágenes y otros recursos utilizados en la página.
 
 ## Funcionalidades implementadas
 
-- La página cuenta con un header que incluye el nombre del sitio.
-- Un menú lateral desplegable que muestra las diferentes categorías de productos.
+- La página cuenta con un header que incluye el logo, menú hamburguesa y nombre del sitio.
 - Sección principal donde se muestran productos en forma de grilla utilizando CSS Grid.
 - Cada producto muestra una imagen, nombre y precio, además de un botón para agregar al carrito.
 - Se utiliza Font Awesome para iconos de favoritos y carrito de compras.
-- Un footer que muestra el año y el nombre del sitio.
+- Un footer que muestra las redes sociales, el año y el nombre del sitio.
 
 ## Tecnologías utilizadas
 
 - HTML5: Para la estructura semántica de la página.
 - CSS3: Para estilizar la página y utilizar CSS Grid.
-- Bootstrap: Para estilos adicionales y componentes de interfaz.
 - Font Awesome: Para iconos utilizados en la página.
 
 ## Uso
